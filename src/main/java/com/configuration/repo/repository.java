@@ -8,5 +8,6 @@ import com.configuration.model.user;
 @Repository
 public interface repository extends JpaRepository<user, Integer>{
 
+	user findByUsername(String username);
 	
 }
